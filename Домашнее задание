@@ -1,0 +1,25 @@
+// Задача 21
+Console.WriteLine("Введите координаты точки А");
+int X = Convert.ToInt32(Console.ReadLine());
+int Y = Convert.ToInt32(Console.ReadLine());
+int Z = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты точки В");
+int X1 = Convert.ToInt32(Console.ReadLine());
+int Y1 = Convert.ToInt32(Console.ReadLine());
+int Z1 = Convert.ToInt32(Console.ReadLine());
+double distance = Math.Sqrt ((X1 - X) * (X1 - X) + (Y1 - Y) *(Y1 - Y) +(Z1 - Z) * (Z1 - Z));
+Console.WriteLine($"Расстояние между точками ({X} , {Y} и {X1} , {Y1} и {Z} , {Z1}) : {distance:f2}");
+
+// Задача 19
+Console.WriteLine("Введите пятизначное число");
+string number = Convert.ToString(Console.ReadLine());
+char [] array = number. ToCharArray();
+Array.Reverse(array);
+string number1 = new string(array);
+if (number==number1)
+{
+    Console.WriteLine("палиндром");
+}else
+{
+    Console.WriteLine("не палиндром");
+}
